@@ -30,8 +30,6 @@ img {
 }
 
 /* NAVIGATION  */
-
-
 nav {
     padding-block: 4px 10px;
     position: fixed;
@@ -50,7 +48,6 @@ nav {
     width: min(100% - 9vw, 1200px);
     margin-inline: auto;
 }
-
 
 .logo img {
     width: 40px;
@@ -95,17 +92,27 @@ nav a,
         gap: 2rem;
     }
 
+    .all {
+        position: absolute;
+        width: 100%;
+        top: 58px;
+        z-index: 1;
+        height: 100vh;
+        background-color: transparent;
+    }
+
     .overlay {
         width: min(100% - 9vw, 1200px);
         margin-inline: auto;
         display: flex;
         justify-content: space-between;
-        width: 250px;
+        width: 0;
         height: 100vh;
         background-color: green;
         position: fixed;
         right: 0;
         top: 57px;
+        transition: .3s all linear;
     }
 
     .overlay_content {
@@ -126,5 +133,9 @@ nav a,
         right: 10px;
         display: block;
         width: 40px;
+    }
+
+    main {
+        position: relative;
     }
 }
