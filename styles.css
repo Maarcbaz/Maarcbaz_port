@@ -11,7 +11,7 @@
     --BLACK-CLR: #000;
     --WHITE-CLR: #fff;
     --LIGHT-WHITE-CLR: rgba(97, 92, 92, 0.331);
-    --LIGHT-FILTER: rgba(152, 154, 152, 0.3);  
+    --LIGHT-FILTER: rgba(152, 154, 152, 0.3);
 }
 
 /* GENERAL STYLING  */
@@ -125,11 +125,12 @@ nav a,
         width: min(100% - 9vw, 1200px);
         margin-inline: auto;
         display: flex;
+        position: fixed;
         justify-content: space-between;
         width: 0;
         height: 100vh;
-        background-color: var(--LIGHT-FILTER);
-        backdrop-filter: blur(300px);
+        background-color: rgba(78, 78, 78, 0.4);
+        backdrop-filter: blur(5px);
         position: fixed;
         right: 0;
         top: 62px;
@@ -149,11 +150,21 @@ nav a,
     }
 
     .open {
-        position: absolute;
+        position: fixed;
         top: 20px;
         right: 10px;
         display: block;
         width: 40px;
+    }
+
+    .iconSm i {
+        color: var(--WHITE-CLR);
+        padding-bottom: 10px;
+    }
+
+    .iconSm {
+        top: 40%;
+        position: fixed;
     }
 
     main {
