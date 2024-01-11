@@ -14,6 +14,7 @@
      --WHITE-CLR: #fff;
      --LIGHT-WHITE-CLR: rgba(97, 92, 92, 0.331);
      --LIGHT-FILTER: rgba(152, 154, 152, 0.3);
+     --ABOUT-TEXT-CLR: #848181;
  }
 
  /* GENERAL STYLING  */
@@ -37,6 +38,7 @@
 
  /* NAVIGATION  */
  nav {
+     z-index: 100;
      padding-block: 4px 10px;
      position: fixed;
      width: 100%;
@@ -107,7 +109,6 @@
 
  /* MAIN  */
  main {
-     z-index: -1;
      width: min(100% - 12vw, 1200px);
      margin-inline: auto;
      position: relative;
@@ -117,15 +118,24 @@
      margin-top: 4rem;
  }
 
+
+ article {
+     display: flex;
+     align-items: center;
+     gap: 4rem;
+ }
+
+ .section_about_text {
+     width: 780px;
+     display: flex;
+     flex-direction: column;
+     gap: 3px;
+ }
+
  .about h1 {
      font-size: 3rem;
      color: var(--WHITE-CLR);
      text-transform: capitalize;
- }
-
- article {
-     display: flex;
-     justify-content: space-between;
  }
 
  .about h3 {
@@ -139,8 +149,41 @@
  }
 
  .about p {
-     color: var(--WHITE-CLR);
+     color: var(--ABOUT-TEXT-CLR);
      font-size: 1rem;
+ }
+
+ .empahSize {
+     color: rgb(214, 212, 212);
+ }
+
+ .about img {
+     border-radius: 20px;
+ }
+
+ .about button {
+     cursor: pointer;
+     border: none;
+     outline: none;
+     padding: .5rem .75rem;
+     border-radius: 10px;
+ }
+
+ .btns {
+     margin-top: 10px;
+
+     display: flex;
+     gap: 10px;
+ }
+
+ @media screen and (max-width: 768px) {
+     .section_about_text h1 {
+         font-size: 2.5rem;
+     }
+
+     .section_about_text h3 {
+         font-size: 1.75rem;
+     }
  }
 
  @media screen and (max-width: 560px) {
@@ -162,12 +205,14 @@
      }
 
      .overlay {
+         z-index: 101;
          width: min(100% - 9vw, 1200px);
          margin-inline: auto;
          display: flex;
          position: fixed;
          justify-content: space-between;
          width: 0;
+         overflow: hidden;
          height: 100vh;
          background-color: rgba(13, 22, 46, 0.785);
          backdrop-filter: blur(5px);
@@ -191,6 +236,7 @@
 
      .open {
          position: fixed;
+         z-index: 101;
          top: 20px;
          right: 10px;
          display: block;
@@ -208,11 +254,47 @@
          position: fixed;
      }
 
+     /* MAIN SECTION  */
      main {
          position: relative;
+     }
+
+     article {
+         flex-direction: column;
+         padding-top: 3rem;
      }
 
      .icon {
          display: none;
      }
+
+     .section_about_text {
+         width: 100%;
+         text-align: center;
+     }
+
+     .section_about_text h1 {
+         font-size: 2.5rem;
+     }
+
+     .section_about_text h3 {
+         font-size: 1.ren;
+     }
+
+     .section_about_text p {
+         font-size: 14px;
+     }
+
+     .btns {
+         align-items: center;
+         justify-content: center;
+     }
  }
+
+ @media screen and (max-width: 480px) {}
+
+ @media screen and (max-width: 375px) {}
+
+ @media screen and (max-width: 360px) {}
+
+ @media screen and (max-width: 320px) {}
