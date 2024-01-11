@@ -160,6 +160,7 @@ nav a,
     .iconSm i {
         color: var(--WHITE-CLR);
         padding-bottom: 10px;
+        font-size: 1rem;
     }
 
     .iconSm {
