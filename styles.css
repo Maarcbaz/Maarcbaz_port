@@ -7,9 +7,11 @@
 
 /* VARIABLES  */
 :root {
-    --MAINBG-CLR: #000;
+    --MAINBG-CLR: #0F1624;
     --BLACK-CLR: #000;
     --WHITE-CLR: #fff;
+    --LIGHT-WHITE-CLR: rgba(97, 92, 92, 0.331);
+    --LIGHT-FILTER: rgba(152, 154, 152, 0.3);  
 }
 
 /* GENERAL STYLING  */
@@ -34,7 +36,11 @@ nav {
     padding-block: 4px 10px;
     position: fixed;
     width: 100%;
-    background-color: red;
+    background-color: var(--MAINBG-CLR);
+}
+
+nav {
+    border-bottom: 1px solid var(--LIGHT-WHITE-CLR);
 }
 
 .overlay,
@@ -50,6 +56,8 @@ nav {
 }
 
 .logo img {
+    cursor: pointer;
+    padding-top: 4px;
     width: 40px;
     border-radius: 50%;
 }
@@ -61,16 +69,19 @@ nav a,
     color: var(--WHITE-CLR);
 }
 
-.topnav a:hover {
-    padding-bottom: 23px;
-    border-bottom: 2px solid blue;
+
+
+.topnav ul a:hover {
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--WHITE-CLR);
 }
 
 nav ul,
 .overlay_content ul {
     padding-top: 12px;
     display: flex;
-    gap: 4rem;
+    align-items: center;
+    gap: 3rem;
 }
 
 nav li,
@@ -82,6 +93,15 @@ nav a,
 .overlay_content a {
     text-decoration: none;
 }
+
+.icon ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 20px;
+}
+
 
 @media screen and (max-width: 560px) {
     nav ul {
@@ -108,10 +128,11 @@ nav a,
         justify-content: space-between;
         width: 0;
         height: 100vh;
-        background-color: green;
+        background-color: var(--LIGHT-FILTER);
+        backdrop-filter: blur(300px);
         position: fixed;
         right: 0;
-        top: 57px;
+        top: 62px;
         transition: .3s all linear;
     }
 
@@ -137,5 +158,9 @@ nav a,
 
     main {
         position: relative;
+    }
+
+    .icon {
+        display: none;
     }
 }
