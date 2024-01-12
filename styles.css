@@ -14,6 +14,7 @@
      --WHITE-CLR: rgb(255, 255, 255);
      --LIGHT-WHITE-CLR: rgba(97, 92, 92, 0.331);
      --LIGHT-FILTER: rgba(152, 154, 152, 0.3);
+     --LIGHT-TECH-FILTER: rgba(152, 154, 152, 0.553);
      --ABOUT-TEXT-CLR: hsl(0, 1%, 51%);
      --TECH-BG: hsl(220, 57%, 20%);
      --LINEAR-GRD: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
@@ -215,8 +216,7 @@
 
  .course h1,
  p {
-     color: var(--WHITE-CLR);
-     /* color: var(--LIGHT-FILTER); */
+     color: var(--LIGHT-TECH-FILTER);
      padding-inline: 14px;
      font-family: inherit;
  }
@@ -298,6 +298,75 @@
 
  }
 
+ /* SECTION PROJECTS  */
+ .section_Project {
+     margin-top: 5rem;
+
+ }
+
+ .section_Project h1 {
+     color: var(--WHITE-CLR);
+     margin-bottom: 2rem;
+     text-transform: capitalize;
+     font-size: 3rem;
+ }
+
+ .projects {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
+     gap: 2rem;
+ }
+
+ .project img {
+     border-radius: 10px;
+ }
+
+ .project {
+     position: relative;
+ }
+
+ .overlap {
+     border-radius: 10px;
+     position: absolute;
+     top: 0;
+     transform: scale(0);
+     transition: .4s all ease;
+     height: 100%;
+     width: 100%;
+ }
+
+ .project:hover .overlap {
+     background-color: hsla(0, 0%, 100%, 0.174);
+     backdrop-filter: blur(5px);
+     transform: scale(1);
+ }
+
+ .overlap_content {
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     position: relative;
+     top: 50%;
+
+ }
+
+ .overlap_content a i {
+     color: var(--WHITE-CLR);
+     font-weight: var(--FW-500);
+ }
+
+ .overlap_content a {
+     text-decoration: none;
+ }
+
+ .overlap_content i:hover {
+     font-weight: var(--FW-700);
+ }
+.description {
+    color: var(--WHITE-CLR);
+    margin-top: 1rem;
+    
+}
  @media screen and (max-width: 768px) {
      .section_about_text h1 {
          font-size: 2.5rem;
@@ -438,12 +507,14 @@
      p {
          font-size: 14px;
      }
+
      /* ADDITIONAL TECHNLOGIES  */
      .add_tech ul {
          justify-content: space-between;
      }
+
      .add_tech ul li {
-        list-style-position: inside;
+         list-style-position: inside;
      }
  }
 
