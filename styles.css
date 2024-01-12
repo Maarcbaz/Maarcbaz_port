@@ -313,7 +313,7 @@
 
  .project_section {
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+     grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
      gap: 2rem;
  }
 
@@ -355,6 +355,10 @@
      font-weight: var(--FW-500);
  }
 
+ .black a i {
+     color: var(--BLACK-CLR);
+ }
+
  .overlap_content a {
      text-decoration: none;
  }
@@ -362,11 +366,13 @@
  .overlap_content i:hover {
      font-weight: var(--FW-700);
  }
-.description {
-    color: var(--WHITE-CLR);
-    margin-top: 1rem;
-    
-}
+
+ .description {
+     color: var(--WHITE-CLR);
+     margin-top: 1rem;
+
+ }
+
  @media screen and (max-width: 768px) {
      .section_about_text h1 {
          font-size: 2.5rem;
@@ -516,11 +522,20 @@
      .add_tech ul li {
          list-style-position: inside;
      }
+
+     /* PROJECTS  */
+     .project_section {
+         grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+     }
  }
 
  @media screen and (max-width: 480px) {}
 
- @media screen and (max-width: 375px) {}
+ @media screen and (max-width: 375px) {
+     .project_section {
+         grid-template-columns: repeat(auto-fill, minmax(280px, 2fr));
+     }
+ }
 
  @media screen and (max-width: 360px) {}
 
