@@ -14,3 +14,11 @@ all.addEventListener('click', () => {
         overlay.style.width = '0'
     }
 })
+let anchors = document.querySelectorAll('body > header > nav > div > ul >  a')
+function addActive(add) {
+    anchors.forEach(anchor => {
+        anchor.style.display = 'none'
+    })
+    document.getElementById(add) = currentTarget.classList.add('active')
+    // add.currentTarget.classList.add('active')
+}

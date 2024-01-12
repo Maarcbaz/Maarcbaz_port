@@ -23,9 +23,22 @@
 						<img src="./images/logo.png" alt="" />
 					</div>
 					<ul>
-						<li><a href="#about">About</a></li>
-						<li><a href="#home">Technologies</a></li>
-						<li><a href="#home">Project</a></li>
+						<li>
+							<a href="#about" onclick="addActive('about')" class="active"
+								>About</a
+							>
+						</li>
+						<li>
+							<a href="#Technologies" onclick="addActive('technologies')"
+								>Technologies</a
+							>
+						</li>
+						<li>
+							<a href="#Project" onclick="addActive('project')">Project</a>
+						</li>
+						<li>
+							<a href="#contact" onclick="addActive('contact')">contact</a>
+						</li>
 					</ul>
 					<div class="icon">
 						<ul>
@@ -57,8 +70,9 @@
 					<div class="overlay_content">
 						<ul>
 							<li><a href="#about">About</a></li>
-							<li><a href="#home">Technologies</a></li>
-							<li><a href="#home">Project</a></li>
+							<li><a href="#technologies">Technologies</a></li>
+							<li><a href="#project">Project</a></li>
+							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -107,14 +121,85 @@
 						>
 					</p>
 					<div class="btns">
+						<button class="talk_btn">
+							Download Resume
+							<span class="download"><i class="fa fa-download"></i></span>
+						</button>
 						<button class="hire_btn">Hire me</button>
-						<button class="talk_btn">Let's talk</button>
 					</div>
 				</div>
 				<div>
 					<img src="./images/staff2.jpg" alt="Abass image" />
 				</div>
 			</article>
+			<section class="section_technologies" id="Technologies">
+				<h1>technologies</h1>
+				<div class="technologies">
+					<div class="technology">
+						<div class="course">
+							<p>HTML</p>
+							<p>Advanced</p>
+						</div>
+						<div class="th_c">
+							<div class="th_layer_high"></div>
+						</div>
+					</div>
+					<div class="technology">
+						<div class="course">
+							<p>CSS</p>
+							<p>Advanced</p>
+						</div>
+						<div class="th_c">
+							<div class="th_layer_high"></div>
+						</div>
+					</div>
+					<div class="technology">
+						<div class="course">
+							<p>Javascript</p>
+							<p>Intermediate</p>
+						</div>
+						<div class="th_c">
+							<div class="th_layer_inter"></div>
+						</div>
+					</div>
+					<div class="technology">
+						<div class="course">
+							<p>Sass, Tailwind, Bootstrap</p>
+							<p>Intermediate</p>
+						</div>
+						<div class="th_c">
+							<div class="th_layer_inter"></div>
+						</div>
+					</div>
+					<div class="technology">
+						<div class="course">
+							<p>React</p>
+							<p>Beginner</p>
+						</div>
+						<div class="th_c">
+							<div class="th_layer_beginner"></div>
+						</div>
+					</div>
+					<div class="technology">
+						<div class="course">
+							<p>TypeScript, JQuery</p>
+							<p>Beginner</p>
+						</div>
+						<div class="th_c">
+							<div class="th_layer_beginner"></div>
+						</div>
+					</div>
+					<div class="technology">
+						<div class="course">
+							<p>Python</p>
+							<p>Beginner</p>
+						</div>
+						<div class="th_c">
+							<div class="th_layer_beginner"></div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 	</body>
 </html>
