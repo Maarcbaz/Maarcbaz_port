@@ -216,6 +216,7 @@
  .course h1,
  p {
      color: var(--WHITE-CLR);
+     /* color: var(--LIGHT-FILTER); */
      padding-inline: 14px;
      font-family: inherit;
  }
@@ -241,7 +242,7 @@
      height: 15px;
      top: 0;
      border-radius: 83px;
-     background: repeating-linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+     background: var(--LINEAR-GRD);
  }
 
  .th_layer_inter {
@@ -250,7 +251,7 @@
      height: 15px;
      top: 0;
      border-radius: 83px;
-     background: repeating-linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+     background: var(--LINEAR-GRD)
  }
 
  .th_layer_beginner {
@@ -259,7 +260,7 @@
      height: 15px;
      top: 0;
      border-radius: 83px;
-     background: repeating-linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+     background: var(--LINEAR-GRD)
  }
 
  .technology {
@@ -273,6 +274,28 @@
      color: var(--WHITE-CLR);
      font-weight: var(--FW-900);
      font-size: 2.5rem;
+ }
+
+ /* ADDITONAL TECHNOLOGIES  */
+ .add_tech {
+     margin-top: 4rem;
+ }
+
+ .add_tech h2,
+ ul li {
+     color: var(--WHITE-CLR);
+ }
+
+ .add_tech h2 {
+     word-spacing: 10px;
+     margin-bottom: 2.5rem;
+ }
+
+ .add_tech ul {
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+
  }
 
  @media screen and (max-width: 768px) {
@@ -413,8 +436,15 @@
      /* TECHNOLOGIES  */
      .course h1,
      p {
-        font-size: 14px;
-    }
+         font-size: 14px;
+     }
+     /* ADDITIONAL TECHNLOGIES  */
+     .add_tech ul {
+         justify-content: space-between;
+     }
+     .add_tech ul li {
+        list-style-position: inside;
+     }
  }
 
  @media screen and (max-width: 480px) {}
