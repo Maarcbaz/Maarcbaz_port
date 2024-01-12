@@ -194,7 +194,11 @@
      font-family: inherit;
  }
 
- .hire_btn  {
+ .phone {
+     display: none;
+ }
+
+ .hire_btn {
      cursor: pointer;
      border: none;
      outline: none;
@@ -494,6 +498,14 @@
      article {
          flex-direction: column;
          padding-top: 3rem;
+     }
+
+     .desktop {
+         display: none;
+     }
+
+     .phone {
+         display: block;
      }
 
      .icon {
