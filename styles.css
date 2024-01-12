@@ -311,9 +311,9 @@
      font-size: 3rem;
  }
 
- .projects {
+ .project_section {
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
+     grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
      gap: 2rem;
  }
 
