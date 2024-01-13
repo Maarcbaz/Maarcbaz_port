@@ -1,6 +1,5 @@
  /* GENERAL RESET  */
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
  * {
      margin: 0;
      padding: 0;
@@ -194,16 +193,10 @@
      font-family: inherit;
  }
 
-
+.fa-download {
+    padding-left: 5px;
+}
  .hire_btn {
-     cursor: pointer;
-     border: none;
-     outline: none;
-     padding: 12px 11px;
-     border-radius: 10px;
-     border-radius: 9px;
-     background: var(--LINEAR-GRD);
-     color: var(--WHITE-CLR);
      font-family: inherit;
      text-decoration: none;
      color: var(--WHITE-CLR);
