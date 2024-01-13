@@ -8,7 +8,7 @@ menu.addEventListener('click', () => {
         overlay.style.width = '230px'
     }
 })
-let all = document.querySelector('.all')
+let all = document.querySelector('.container')
 all.addEventListener('click', () => {
     if (overlay.style.width == '230px') {
         overlay.style.width = '0'

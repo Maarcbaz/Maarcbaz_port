@@ -194,9 +194,6 @@
      font-family: inherit;
  }
 
- .phone {
-     display: none;
- }
 
  .hire_btn {
      cursor: pointer;
@@ -431,13 +428,10 @@
          gap: 2rem;
      }
 
-     .all {
+     .container {
          position: absolute;
-         width: 100%;
-         top: 58px;
-         height: 100vh;
-         background-color: transparent;
          z-index: 1;
+         background-color: transparent;
      }
 
      .overlay {
@@ -454,7 +448,7 @@
          backdrop-filter: blur(5px);
          position: fixed;
          right: 0;
-         top: 62px;
+         top: 61px;
          transition: .3s all linear;
      }
 
@@ -491,21 +485,10 @@
      }
 
      /* MAIN SECTION  */
-     main {
-         position: relative;
-     }
 
      article {
          flex-direction: column;
          padding-top: 3rem;
-     }
-
-     .desktop {
-         display: none;
-     }
-
-     .phone {
-         display: block;
      }
 
      .icon {
