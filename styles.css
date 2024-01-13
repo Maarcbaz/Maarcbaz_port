@@ -388,6 +388,12 @@
 
  }
 
+ @media screen and (max-width: 1200px) {
+     .project_section {
+         grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+     }
+ }
+
  @media screen and (max-width: 768px) {
      .section_about_text h1 {
          font-size: 2.5rem;
