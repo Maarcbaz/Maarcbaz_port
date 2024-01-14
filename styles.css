@@ -1,5 +1,6 @@
  /* GENERAL RESET  */
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
  * {
      margin: 0;
      padding: 0;
@@ -193,9 +194,10 @@
      font-family: inherit;
  }
 
-.fa-download {
-    padding-left: 5px;
-}
+ .fa-download {
+     padding-left: 5px;
+ }
+
  .hire_btn {
      font-family: inherit;
      text-decoration: none;
@@ -361,6 +363,8 @@
  .overlap_content a i {
      color: var(--WHITE-CLR);
      font-weight: var(--FW-500);
+     filter: brightness(90%);
+     font-weight: var(--FW-500);
  }
 
  .black a i {
@@ -371,8 +375,10 @@
      text-decoration: none;
  }
 
- .overlap_content i:hover {
-     font-weight: var(--FW-700);
+ .overlap_content i:hover,
+ .overlap_content a:hover {
+     filter: brightness(100%);
+     font-weight: var(--FW-600);
  }
 
  .description {
