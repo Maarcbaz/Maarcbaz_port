@@ -41,6 +41,10 @@
      scroll-behavior: smooth;
  }
 
+ i {
+     cursor: pointer;
+ }
+
  img {
      display: block;
      max-width: 100%;
@@ -438,9 +442,13 @@
      }
 
      .container {
-         position: absolute;
-         z-index: 1;
          background-color: transparent;
+     }
+
+     .iconSm {
+         z-index: 1;
+         position: absolute;
+
      }
 
      .overlay {
@@ -470,6 +478,7 @@
          position: absolute;
          left: 60px;
          top: 50px;
+         align-items: start;
          gap: 3rem;
      }
 
