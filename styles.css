@@ -360,6 +360,10 @@
 
  }
 
+ .overlap_content a {
+     padding: 20px;
+ }
+
  .overlap_content a i {
      color: var(--WHITE-CLR);
      font-weight: var(--FW-500);
