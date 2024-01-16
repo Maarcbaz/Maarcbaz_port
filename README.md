@@ -1,14 +1,14 @@
 # Abass Muhammed
 
 ## About Me
-I am a passionate and dedicated with Frontend with a strong background in Web development. My goal is to [Your Mission or Goal].
+I am passionate and dedicated with Frontend with a strong background in Web development. My goal is to [Your Mission or Goal].
 
 ## Portfolio
 
-### Project 1: [Easy bank ]
-- **Description:** For shocasing a bank home pagr.
+### Project 1: [Netflix ]
+- **Description:** Cloned the netflix webpage
 - **Skills:** HTML, CSS, Javascript.
-- **Link:** [Project Link or Demo]
+- **Link:** []
 
 ### Project 2: [Project Name 2]
 - **Description:** Brief description of the project.
@@ -21,7 +21,7 @@ I am a passionate and dedicated with Frontend with a strong background in Web de
 - **Link:** [Project Link or Demo]
 
 ## Skills
-- List your key skills and technologies.
+- HTML, CSS, Javascript, Boostrap
 
 ## Experience
 ### [Company Name] - [Job Title]
@@ -41,16 +41,13 @@ I am a passionate and dedicated with Frontend with a strong background in Web de
 - **Olayemiabaz@gmail.com:** [Email]
 - **https://www.linkedin.com/public-profile/settings:** [LinkedIn Profile]
 - **https://github.com/Maarcbaz/Portfolio-Maarcbaz:** [GitHub Profile]
-- **Portfolio:** [Portfolio URL]
+- **https://maarcbaz.vercel.app/ ** [Portfolio URL]
 
 ## Certifications
 - FreeCodeCamp Responsive web design.
 
-## Awards and Achievements
-- List any awards or recognitions.
 
 ## Blog
-- Write about your thoughts, experiences, or projects on your blog. [Link to your blog]
-
+- Creating a respomsive design
 ---
 
