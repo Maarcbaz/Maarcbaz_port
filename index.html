@@ -44,20 +44,30 @@
 					</div>
 					<ul>
 						<li>
-							<a href="#about" onclick="addActive('about')" class="active"
+							<a
+								href="#about"
+								onclick="navNavigation(event)"
+								class="allNav active"
 								>About</a
 							>
 						</li>
 						<li>
-							<a href="#Technologies" onclick="addActive('technologies')"
+							<a
+								href="#technologies"
+								onclick="navNavigation(event)"
+								class="allNav"
 								>Technologies</a
 							>
 						</li>
 						<li>
-							<a href="#Project" onclick="addActive('project')">Project</a>
+							<a href="#Project" class="allNav" onclick="navNavigation(event)"
+								>Project</a
+							>
 						</li>
 						<li>
-							<a href="#contact" onclick="addActive('contact')">contact</a>
+							<a href="#contact" class="allNav" onclick="navNavigation(event)"
+								>contact</a
+							>
 						</li>
 					</ul>
 					<div class="icon">
@@ -91,7 +101,7 @@
 						<ul>
 							<li><a href="#about">About</a></li>
 							<li><a href="#technologies">Technologies</a></li>
-							<li><a href="#project">Project</a></li>
+							<li><a href="#Project">Project</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</div>
@@ -236,14 +246,13 @@
 					<h2>Additional technologies and skills</h2>
 					<ul>
 						<li>Version Control (Git)</li>
-						<li>Word press</li>
 						<li>Quick Learning</li>
-						<li><abbr title="Responsive Web Design">RWD</abbr></li>
 						<li>Teamwork</li>
+						<li><abbr title="Responsive Web Design">RWD</abbr></li>
 						<li>Debugging</li>
 					</ul>
 				</section>
-				<section class="section_Project" id="project">
+				<section class="section_Project" id="Project">
 					<h1>projects</h1>
 					<div class="project_section">
 						<div class="projects">
@@ -437,6 +446,92 @@
 					</div>
 				</section>
 			</main>
+			<footer id="contact">
+				<div class="popup" id="popup_msg">
+					<div class="overlay_pop"></div>
+					<div class="pop_content">
+						<h4>Send Email instaed</h4>
+						<div class="popmenu_btn">
+							<button class="btnCancel" onclick="popNav()">Cancel</button>
+							<button class="bntEmail_pop">Send Mail</button>
+						</div>
+					</div>
+				</div>
+				<h2 class="ftHead">Contact</h2>
+				<div class="footer">
+					<div class="footer_text">
+						<p>
+							Have a question, a project in mind, or just want to connect? I'm
+							here and ready to chat! Your ideas and feedback are always
+							welcomed. Reach out for inquiries, collaborations, or if you
+							simply want to discuss the exciting possibilities of the digital
+							world.
+						</p>
+						<div class="ftLinks">
+							<ul>
+								<li>
+									<a
+										href="https://github.com/Maarcbaz?tab=repositories"
+										target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://www.linkedin.com/in/abass-muhammed-73739829b/"
+										target="_blank">
+										<i class="fa fa-linkedin-square"></i>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://wa.me/message/ZZIQ6AVH74DBA1"
+										target="_blank">
+										<i class="fa fa-whatsapp"></i>
+									</a>
+								</li>
+								<li>
+									<a href="mailto:olayemiabaz@gmail.com" target="_blank">
+										<i class="fa fa-gmail"></i>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://wa.me/message/ZZIQ6AVH74DBA1"
+										target="_blank">
+										<i class="fa fa-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://wa.me/message/ZZIQ6AVH74DBA1"
+										target="_blank">
+										<i class="fa fa-youtube-square"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<form onsubmit="return validateForm()">
+						<input
+							type="text"
+							name="name"
+							id="full_name"
+							placeholder="Jane Doe" />
+						<textarea
+							name="message"
+							id="textarea"
+							cols="20"
+							rows="10"
+							placeholder="Message"></textarea>
+						<input type="email name="email" id="_email"
+						placeholder="janeDoe@email.com" />
+						<button id="btnFooter" id="email" type="submit" onclick="popNav()">
+							Submit
+						</button>
+					</form>
+				</div>
+			</footer>
 		</div>
 	</body>
 </html>
