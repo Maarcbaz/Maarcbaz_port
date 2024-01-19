@@ -471,7 +471,7 @@
  textarea {
      font-family: sans-serif;
      background-color: transparent;
-     border: 2px solid var(--LIGHT-FILTER);
+     border: 1px solid var(--LIGHT-FILTER);
      outline: none;
      color: var(--WHITE-CLR);
      padding: 10px;
@@ -519,11 +519,16 @@
  .overlay_pop {
      position: fixed;
      background-color: rgba(128, 128, 128, 0.198);
-     width: 100%;
+     max-width: 100%;
      height: 100vh;
      top: 0;
      left: 0;
+     right: 0;
      display: none;
+ }
+
+ footer {
+     overflow: hidden;
  }
 
  .pop_content {
@@ -531,6 +536,7 @@
      padding: 20px;
      border-radius: 8px;
      position: absolute;
+     overflow: hidden;
 
      transform: translate(-90%, -50%) scale(0);
  }
@@ -540,6 +546,11 @@
      color: var(--BLACK-CLR);
      padding-bottom: 10px;
      font-family: inherit;
+ }
+
+ .popmenu_btn a {
+     text-decoration: none;
+     color: var(--WHITE-CLR);
  }
 
  .popmenu_btn {
@@ -781,5 +792,9 @@
 
      h2 {
          font-size: 10px;
+     }
+
+     .section_technologies h1 {
+         font-size: 2rem;
      }
  }
