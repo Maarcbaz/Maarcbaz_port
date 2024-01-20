@@ -1,11 +1,20 @@
 let menu = document.querySelector('.open')
+let icon_hamburger = document.getElementById('openNav')
 let overlay = document.querySelector('.overlay')
 menu.addEventListener('click', () => {
+
+    overlay.classList.toggle('activeNav')
     if (overlay.style.width == '230px') {
         overlay.style.width = '0'
     }
     else {
         overlay.style.width = '230px'
+    }
+    if (overlay.className.includes('activeNav')) {
+        icon_hamburger.setAttribute('src', './images/icon-close.svg')
+    }
+    else {
+        icon_hamburger.setAttribute('src', './images/icon-hambuger.svg')
     }
 })
 let all = document.querySelector('.container')
