@@ -44,6 +44,7 @@
 
  i {
      cursor: pointer;
+     color: var(--WHITE-CLR);
  }
 
  img {
