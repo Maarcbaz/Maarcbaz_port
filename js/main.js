@@ -1,26 +1,38 @@
 let menu = document.querySelector('.open')
 let icon_hamburger = document.getElementById('openNav')
 let overlay = document.querySelector('.overlay')
+let all = document.querySelector('.container')
+all.addEventListener('click', () => {
+    // if (overlay.style.width == '230px') {
+    //     overlay.style.width = '0'
+    //     icon_hamburger.setAttribute('src', './images/icon-hambuger.svg')
+    // }
+    // else if (overlay.style.width === '230') {
+    //     icon_hamburger.setAttribute('src', './images/icon-close.svg')
+    // } else {
+    // }
+
+    if (overlay.className.includes('activeNav')) {
+        icon_hamburger.setAttribute('src', './images/icon-hambuger.svg')
+
+    }
+
+    overlay.classList.remove('activeNav')
+})
 menu.addEventListener('click', () => {
 
     overlay.classList.toggle('activeNav')
-    if (overlay.style.width == '230px') {
-        overlay.style.width = '0'
-    }
-    else {
-        overlay.style.width = '230px'
-    }
+    // if (overlay.style.width == '230px') {
+    //     overlay.style.width = '0'
+    // }
+    // else {
+    //     overlay.style.width = '230px'
+    // }
     if (overlay.className.includes('activeNav')) {
         icon_hamburger.setAttribute('src', './images/icon-close.svg')
     }
     else {
         icon_hamburger.setAttribute('src', './images/icon-hambuger.svg')
-    }
-})
-let all = document.querySelector('.container')
-all.addEventListener('click', () => {
-    if (overlay.style.width == '230px') {
-        overlay.style.width = '0'
     }
 })
 let anchors = document.querySelectorAll('body > header > nav > div > ul >  a')
