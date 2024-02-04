@@ -678,9 +678,9 @@
          right: 10px;
          display: block;
          width: 40px;
-     } */
+     }
 
-     .iconSm i {
+     */ .iconSm i {
          color: var(--WHITE-CLR);
          padding-bottom: 10px;
          font-size: 1rem;

@@ -1,19 +1,19 @@
 # Abass Muhammed
 
 ## About Me
-I am passionate and dedicated with Frontend with a strong background in Web development. My goal is to [Your Mission or Goal].
+I am passionate and dedicated with Frontend, with a strong background in Web development. My goal is to create powerful WebApp.
 
 ## Portfolio
 
 ### Project 1: [Netflix ]
 - **Description:** Cloned the netflix webpage
 - **Skills:** HTML, CSS, Javascript.
-- **Link:** []
+- **Link:** [https://maarcbaz-netflix.vercel.app/]
 
 ### Project 2: [Project Name 2]
-- **Description:** Brief description of the project.
-- **Skills:** List of technologies or skills used.
-- **Link:** [Project Link or Demo]
+- **Description:** A webwsite to showcase construction site.
+- **Skills:** HTML, CSS, Javascrpt.
+- **Link:** [https://maarcbaz-br-architect.vercel.app/]
 
 ### Project 3: [Project Name 3]
 - **Description:** Brief description of the project.
@@ -21,7 +21,7 @@ I am passionate and dedicated with Frontend with a strong background in Web deve
 - **Link:** [Project Link or Demo]
 
 ## Skills
-- HTML, CSS, Javascript, Boostrap
+- HTML, CSS, Javascript, Boostrap, Tailwind CSS
 
 ## Experience
 ### [Company Name] - [Job Title]
