@@ -1,7 +1,22 @@
+let animation = document.querySelector(".animation")
+let containers = document.querySelector(".containers")
 let menu = document.querySelector('.open')
 let icon_hamburger = document.getElementById('openNav')
 let overlay = document.querySelector('.overlay')
 let all = document.querySelector('.container')
+function loadAnime() {
+    setTimeout(() => {
+        animation.style.display = 'none'
+        if (animation.style.display == 'block') {
+            containers.style.display = 'none'
+        } else {
+            containers.style.display = 'block'
+        }
+    }, 4500);
+}
+window.addEventListener("load", function () {
+    loadAnime()
+})
 all.addEventListener('click', () => {
     // if (overlay.style.width == '230px') {
     //     overlay.style.width = '0'
@@ -92,3 +107,19 @@ function popNav() {
 //     }
 //     evt.currentTarget.className = ' active'
 // }
+
+let projects = document.querySelectorAll(".projects")
+let section_about_text = document.querySelector(".section_about_text")
+window.addEventListener("scroll", sci = () => {
+    let height = window.innerHeight / 9 * .3
+    projects.forEach(project => {
+        const protop = project.getBoundingClientRect().top
+        if (height < protop) {
+            project.classList.add("show")
+        }
+        else {
+            project.classList.remove("show")
+        }
+    })
+})
+sci()

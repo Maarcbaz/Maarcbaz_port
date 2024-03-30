@@ -30,12 +30,17 @@
 
  /* GENERAL STYLING  */
  body {
+     overflow-x: hidden;
      min-height: 100vh;
      display: flex;
      flex-direction: column;
-     background: var(--MAINBG-CLR);
      line-height: 1.3;
      font-family: 'Poppins', sans-serif;
+ }
+
+ .containers {
+     background: var(--MAINBG-CLR);
+
  }
 
  html {
@@ -157,6 +162,99 @@
      display: flex;
      flex-direction: column;
      gap: 3px;
+     animation: display 2s;
+ }
+
+ .section_about_img {
+     animation: displayImg 2s;
+ }
+
+ @keyframes display {
+     from {
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
+ }
+
+ @keyframes displayImg {
+     from {
+         transform: translateX(100%);
+     }
+
+     to {
+         transform: translateX(0%);
+     }
+ }
+
+ /* ANIMATION  */
+ .containers {
+     display: none;
+ }
+
+ .animation {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: fixed !important;
+     top: 0%;
+     left: 50%;
+     width: 100vw;
+     height: 100vh;
+     z-index: 1000;
+     overflow-x: hidden;
+     background-color: var(--WHITE-CLR);
+     transition: .2s display;
+     transform: translate(-50%, 0%);
+ }
+
+
+ .animation span {
+     width: 10px;
+     margin-inline: 4px;
+     border-radius: 10px;
+     height: 60px;
+     background-color: rgb(13, 29, 71);
+     animation: 1.3s infinite load;
+ }
+
+ .animation span:nth-child(1) {
+     animation-delay: .5s;
+ }
+
+ .animation span:nth-child(2) {
+     animation-delay: .20s;
+ }
+
+ .animation span:nth-child(3) {
+     animation-delay: .30s;
+ }
+
+ .animation span:nth-child(4) {
+     animation-delay: .40s;
+ }
+
+ .animation span:nth-child(5) {
+     animation-delay: .50s;
+ }
+
+ @keyframes load {
+     0% {
+         background-color: #160d32;
+         height: 30px;
+     }
+
+     50% {
+         background-color: #160d32;
+         height: 60px;
+     }
+
+     100% {
+         background-color: #160d32;
+         height: 30px;
+     }
  }
 
  .about h1 {
@@ -241,6 +339,17 @@
      margin-top: 4rem;
      display: flex;
      justify-content: space-between;
+     animation: textanime 2s;
+ }
+
+ @keyframes textanime {
+     from {
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
  }
 
  .th_c {
@@ -250,6 +359,19 @@
      border-radius: 83px;
      background-color: var(--TECH-BG);
      overflow: hidden;
+     animation: th_canime 2s;
+ }
+
+ @keyframes th_canime {
+     from {
+         opacity: 0;
+         transform: translateX(-300%);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateX(0%);
+     }
  }
 
  .th_layer_high {
@@ -321,7 +443,7 @@
  /* SECTION PROJECTS  */
  .section_Project {
      margin-top: 5rem;
-
+     overflow: hidden;
  }
 
  .section_Project h1 {
@@ -343,6 +465,22 @@
 
  .project {
      position: relative;
+ }
+
+ .projects {
+     transition: 500ms ease;
+ }
+
+ .projects:nth-child(odd) {
+     transform: translateX(-300%);
+ }
+
+ .projects:nth-of-type(even) {
+     transform: translateX(300%);
+ }
+
+ .projects.show {
+     transform: translateX(0);
  }
 
  .overlap {

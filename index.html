@@ -36,41 +36,87 @@
 		<script src="./js/main.js" defer></script>
 	</head>
 	<body>
-		<header>
-			<nav>
-				<div class="topnav">
-					<div class="logo">
-						<img src="./images/logo.png" alt="" />
+		<div class="animation">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="containers">
+			<header>
+				<nav>
+					<div class="topnav">
+						<div class="logo">
+							<img src="./images/logo.png" alt="" />
+						</div>
+						<ul>
+							<li>
+								<a
+									href="#about"
+									onclick="navNavigation(event)"
+									class="allNav active"
+									>About</a
+								>
+							</li>
+							<li>
+								<a
+									href="#technologies"
+									onclick="navNavigation(event)"
+									class="allNav"
+									>Technologies</a
+								>
+							</li>
+							<li>
+								<a href="#Project" class="allNav" onclick="navNavigation(event)"
+									>Project</a
+								>
+							</li>
+							<li>
+								<a href="#contact" class="allNav" onclick="navNavigation(event)"
+									>contact</a
+								>
+							</li>
+						</ul>
+						<div class="icon">
+							<ul>
+								<li>
+									<a
+										href="https://github.com/Maarcbaz?tab=repositories"
+										target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://www.linkedin.com/in/abass-muhammed-73739829b/"
+										target="_blank">
+										<i class="fa fa-linkedin-square"></i>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://wa.me/message/ZZIQ6AVH74DBA1"
+										target="_blank">
+										<i class="fa fa-whatsapp"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<ul>
-						<li>
-							<a
-								href="#about"
-								onclick="navNavigation(event)"
-								class="allNav active"
-								>About</a
-							>
-						</li>
-						<li>
-							<a
-								href="#technologies"
-								onclick="navNavigation(event)"
-								class="allNav"
-								>Technologies</a
-							>
-						</li>
-						<li>
-							<a href="#Project" class="allNav" onclick="navNavigation(event)"
-								>Project</a
-							>
-						</li>
-						<li>
-							<a href="#contact" class="allNav" onclick="navNavigation(event)"
-								>contact</a
-							>
-						</li>
-					</ul>
-					<div class="icon">
+				</nav>
+				<div class="all">
+					<div class="overlay">
+						<div class="overlay_content">
+							<ul>
+								<li><a href="#about">About</a></li>
+								<li><a href="#technologies">Technologies</a></li>
+								<li><a href="#Project">Project</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="iconSm">
 						<ul>
 							<li>
 								<a
@@ -94,493 +140,464 @@
 						</ul>
 					</div>
 				</div>
-			</nav>
-			<div class="all">
-				<div class="overlay">
-					<div class="overlay_content">
-						<ul>
-							<li><a href="#about">About</a></li>
-							<li><a href="#technologies">Technologies</a></li>
-							<li><a href="#Project">Project</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
-					</div>
+				<div class="open">
+					<img
+						id="openNav"
+						src="./images/icon-hambuger.svg"
+						alt="icon-hamburger image" />
 				</div>
-				<div class="iconSm">
-					<ul>
-						<li>
-							<a
-								href="https://github.com/Maarcbaz?tab=repositories"
-								target="_blank">
-								<i class="fa fa-github"></i>
-							</a>
-						</li>
-						<li>
-							<a
-								href="https://www.linkedin.com/in/abass-muhammed-73739829b/"
-								target="_blank">
-								<i class="fa fa-linkedin-square"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://wa.me/message/ZZIQ6AVH74DBA1" target="_blank">
-								<i class="fa fa-whatsapp"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="open">
-				<img
-					id="openNav"
-					src="./images/icon-hambuger.svg"
-					alt="icon-hamburger image" />
-			</div>
-		</header>
-		<div class="container">
-			<main>
-				<article class="about" id="about">
-					<div class="section_about_text">
-						<h1>hello there!</h1>
-						<h3>I'm <span class="name">Abass Muhammed</span></h3>
-						<p>
-							A <span class="empahSize"> front-end developer </span> with a
-							strong enthusiasm for creating flawless
-							<span class="empahSize"> user interfaces. </span> My creative
-							touch combined with a passion for
-							<span class="empahSize"> clean code</span>
-							allows me to turn concepts into
-							<span class="empahSize">
-								visually attractive web applications.</span
-							>
-						</p>
-						<div class="btns">
-							<button class="talk_btn">
-								<a
-									href="./Abass_muhammed .pdf"
-									download="Abass_Muhammed_Resume"
-									class="download hire_btn"
-									>Download Resume<i class="fa fa-download"></i>
-								</a>
-							</button>
-							<button class="talk_btn">
-								<a
-									class="hire_btn"
-									href="mailto:Olayemiabaz@gmail.com"
-									target="_blank"
-									>Hire me!</a
+			</header>
+			<div class="container">
+				<main>
+					<article class="about" id="about">
+						<div class="section_about_text">
+							<h1>hello there!</h1>
+							<h3>I'm <span class="name">Abass Muhammed</span></h3>
+							<p>
+								A <span class="empahSize"> front-end developer </span> with a
+								strong enthusiasm for creating flawless
+								<span class="empahSize"> user interfaces. </span> My creative
+								touch combined with a passion for
+								<span class="empahSize"> clean code</span>
+								allows me to turn concepts into
+								<span class="empahSize">
+									visually attractive web applications.</span
 								>
+							</p>
+							<div class="btns">
+								<button class="talk_btn">
+									<a
+										href="./Abass_muhammed .pdf"
+										download="Abass_Muhammed_Resume"
+										class="download hire_btn"
+										>Download Resume<i class="fa fa-download"></i>
+									</a>
+								</button>
+								<button class="talk_btn">
+									<a
+										class="hire_btn"
+										href="mailto:Olayemiabaz@gmail.com"
+										target="_blank"
+										>Hire me!</a
+									>
+								</button>
+							</div>
+						</div>
+						<div class="section_about_img">
+							<img src="./images/abass.jpg" title="Abass" alt="Abass image" />
+						</div>
+					</article>
+					<section class="section_technologies" id="technologies">
+						<h1>technologies</h1>
+						<div class="technologies">
+							<div class="technology">
+								<div class="course">
+									<p>HTML</p>
+									<p>Advanced</p>
+								</div>
+								<div class="th_c">
+									<div class="th_layer_high"></div>
+								</div>
+							</div>
+							<div class="technology">
+								<div class="course">
+									<p>CSS</p>
+									<p>Advanced</p>
+								</div>
+								<div class="th_c">
+									<div class="th_layer_high"></div>
+								</div>
+							</div>
+							<div class="technology">
+								<div class="course">
+									<p>Javascript [ES6]</p>
+									<p>Intermediate</p>
+								</div>
+								<div class="th_c">
+									<div class="th_layer_inter"></div>
+								</div>
+							</div>
+							<div class="technology">
+								<div class="course">
+									<p>Sass, Tailwind, Bootstrap</p>
+									<p>Intermediate</p>
+								</div>
+								<div class="th_c">
+									<div class="th_layer_inter"></div>
+								</div>
+							</div>
+							<div class="technology">
+								<div class="course">
+									<p>React</p>
+									<p>Beginner</p>
+								</div>
+								<div class="th_c">
+									<div class="th_layer_beginner"></div>
+								</div>
+							</div>
+							<div class="technology">
+								<div class="course">
+									<p>TypeScript, JQuery</p>
+									<p>Beginner</p>
+								</div>
+								<div class="th_c">
+									<div class="th_layer_beginner"></div>
+								</div>
+							</div>
+							<div class="technology">
+								<div class="course">
+									<p>Python</p>
+									<p>Beginner</p>
+								</div>
+								<div class="th_c">
+									<div class="th_layer_beginner"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="add_tech">
+						<h2>Additional technologies and skills</h2>
+						<ul>
+							<li>Version Control (Git)</li>
+							<li>Quick Learning</li>
+							<li>Teamwork</li>
+							<li><abbr title="Responsive Web Design">RWD</abbr></li>
+							<li>Debugging</li>
+						</ul>
+					</section>
+					<section class="section_Project" id="Project">
+						<h1>projects</h1>
+						<div class="project_section">
+							<div class="projects">
+								<div class="projects_id">
+									<div class="project">
+										<img
+											src="./images/netflix_page.png"
+											alt="netflix_image page" />
+										<div class="overlap">
+											<div class="overlap_content">
+												<a
+													href="https://maarcbaz-netflix.vercel.app/"
+													target="_blank">
+													<i class="fa fa-globe"> Live</i>
+												</a>
+												<a
+													href="https://github.com/Maarcbaz/Netflix.git"
+													target="_blank">
+													<i class="fa fa-code"> Code </i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<p class="description">Netflix webpage</p>
+								</div>
+							</div>
+							<div class="projects">
+								<div class="projects_id">
+									<div class="project">
+										<img
+											src="./images/br-architect.png"
+											alt="netflix_image page" />
+										<div class="overlap">
+											<div class="overlap_content black">
+												<a
+													href="https://maarcbaz-br-architect.vercel.app/"
+													target="_blank">
+													<i class="fa fa-globe"> Live</i>
+												</a>
+												<a
+													href="https://github.com/Maarcbaz/BR-Architect.git"
+													target="_blank">
+													<i class="fa fa-code"> Code </i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<p class="description">
+										Landing page for a construction site
+									</p>
+								</div>
+							</div>
+							<div class="projects">
+								<div class="projects_id">
+									<div class="project">
+										<img src="./images/space_Tourism.png" alt="space_Tourism" />
+										<div class="overlap">
+											<div class="overlap_content">
+												<a
+													href="https://space-tourism-webapp-omega.vercel.app/"
+													target="_blank">
+													<i class="fa fa-globe"> Live</i>
+												</a>
+												<a
+													href="https://github.com/Maarcbaz/Space-tourism.git"
+													target="_blank">
+													<i class="fa fa-code"> Code </i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<p class="description">Space Tourism webApp</p>
+								</div>
+							</div>
+							<div class="projects">
+								<div class="projects_id">
+									<div class="project">
+										<img src="./images/product_page.png" alt="product_page" />
+										<div class="overlap">
+											<div class="overlap_content black">
+												<a
+													href="https://product-page-one-snowy.vercel.app/"
+													target="_blank">
+													<i class="fa fa-globe"> Live</i>
+												</a>
+												<a
+													href="https://github.com/Maarcbaz/Product_page.git"
+													target="_blank">
+													<i class="fa fa-code"> Code </i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<p class="description">A product landing page</p>
+								</div>
+							</div>
+							<div class="projects">
+								<div class="projects_id">
+									<div class="project">
+										<img src="./images/flyo.png" alt="netflix_image page" />
+										<div class="overlap">
+											<div class="overlap_content">
+												<a
+													href="https://maarcbaz-flyo-page.vercel.app/"
+													target="_blank">
+													<i class="fa fa-globe"> Live</i>
+												</a>
+												<a
+													href="https://github.com/Maarcbaz/flyo-landing-page.git"
+													target="_blank">
+													<i class="fa fa-code"> Code </i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<p class="description">Flyo landing Webpage</p>
+								</div>
+							</div>
+							<div class="projects">
+								<div class="projects_id">
+									<div class="project">
+										<img
+											src="./images/loopstudios.png"
+											alt="netflix_image page" />
+										<div class="overlap">
+											<div class="overlap_content">
+												<a
+													href="https://maarcbaz-loopstudios-page.vercel.app/"
+													target="_blank">
+													<i class="fa fa-globe"> Live</i>
+												</a>
+												<a
+													href="https://github.com/Maarcbaz/Loopstudio-page.git"
+													target="_blank">
+													<i class="fa fa-code"> Code </i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<p class="description">Loopstudios Webpage</p>
+								</div>
+							</div>
+							<div class="projects">
+								<div class="projects_id">
+									<div class="project">
+										<img
+											src="./images/easy-bank-landing_page.png"
+											alt="netflix_image page" />
+										<div class="overlap">
+											<div class="overlap_content black">
+												<a
+													href="https://maarcbaz-easybank.vercel.app/"
+													target="_blank">
+													<i class="fa fa-globe"> Live</i>
+												</a>
+												<a
+													href="https://github.com/Maarcbaz/Easybank.git"
+													target="_blank">
+													<i class="fa fa-code"> Code </i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<p class="description">Easybank landing Webpage</p>
+								</div>
+							</div>
+							<div class="projects">
+								<div class="projects_id">
+									<div class="project">
+										<img
+											src="./images/iphone_webapp.png"
+											alt="netflix_image page" />
+										<div class="overlap">
+											<div class="overlap_content">
+												<a
+													href="https://iphone-webapp.vercel.app/"
+													target="_blank">
+													<i class="fa fa-globe"> Live</i>
+												</a>
+												<a
+													href="https://github.com/Maarcbaz/Iphone-webApp.git"
+													target="_blank">
+													<i class="fa fa-code"> Code </i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<p class="description">Iphone Webpage</p>
+								</div>
+							</div>
+							<div class="projects">
+								<div class="projects_id">
+									<div class="project">
+										<img
+											src="./images/interior_desing.png"
+											alt="netflix_image page" />
+										<div class="overlap">
+											<div class="overlap_content">
+												<a
+													href="https://maarcbaz-interior-design.vercel.app/"
+													target="_blank">
+													<i class="fa fa-globe"> Live</i>
+												</a>
+												<a
+													href="https://github.com/Maarcbaz/interior-design.git"
+													target="_blank">
+													<i class="fa fa-code"> Code </i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<p class="description">Landing page for Interior Design</p>
+								</div>
+							</div>
+							<div class="projects">
+								<div class="projects_id">
+									<div class="project">
+										<img src="./images/catering.png" alt="netflix_image page" />
+										<div class="overlap">
+											<div class="overlap_content">
+												<a
+													href="https://maarcbaz-catering-site.vercel.app/"
+													target="_blank">
+													<i class="fa fa-globe"> Live</i>
+												</a>
+												<a
+													href="https://github.com/Maarcbaz/catering-site.git"
+													target="_blank">
+													<i class="fa fa-code"> Code </i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<p class="description">Catering Webpage</p>
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+				<footer id="contact">
+					<div class="popup" id="popup_msg">
+						<div class="overlay_pop"></div>
+						<div class="pop_content">
+							<h4>Send Email instead</h4>
+							<div class="popmenu_btn">
+								<button class="btnCancel" onclick="popNav()">Cancel</button>
+								<button class="bntEmail_pop">
+									<a href="mailto:Olayemiabaz@gmail.com">Send Mail </a>
+								</button>
+							</div>
+						</div>
+					</div>
+					<h2 class="ftHead">Contact</h2>
+					<div class="footer">
+						<div class="footer_text">
+							<p>
+								Have a question, a project in mind, or just want to connect? I'm
+								here and ready to chat! Your ideas and feedback are always
+								welcomed. Reach out for inquiries, collaborations, or if you
+								simply want to discuss the exciting possibilities of the digital
+								world.
+							</p>
+							<div class="ftLinks">
+								<ul>
+									<li>
+										<a
+											href="https://github.com/Maarcbaz?tab=repositories"
+											target="_blank">
+											<i class="fa fa-github"></i>
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://www.linkedin.com/in/abass-muhammed-73739829b/"
+											target="_blank">
+											<i class="fa fa-linkedin-square"></i>
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://wa.me/message/ZZIQ6AVH74DBA1"
+											target="_blank">
+											<i class="fa fa-whatsapp"></i>
+										</a>
+									</li>
+									<li>
+										<a href="mailto:olayemiabaz@gmail.com" target="_blank">
+											<i class="fa fa-message"></i>
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://www.instagram.com/stre_etcoder/"
+											target="_blank">
+											<i class="fa fa-instagram"></i>
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://www.youtube.com/channel/UCCDv8OlNbM3Q6rKfegisjkw"
+											target="_blank">
+											<i class="fa fa-youtube-square"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<form onsubmit="return validateForm()">
+							<input
+								type="text"
+								name="name"
+								id="full_name"
+								placeholder="Jane Doe" />
+							<textarea
+								name="message"
+								id="textarea"
+								cols="20"
+								rows="10"
+								placeholder="Message"></textarea>
+							<input type="email name="email" id="_email"
+							placeholder="janeDoe@email.com" />
+							<button
+								id="btnFooter"
+								id="email"
+								type="submit"
+								onclick="popNav()">
+								Submit
 							</button>
-						</div>
+						</form>
 					</div>
-					<div>
-						<img src="./images/abass.jpg" title="Abass" alt="Abass image" />
-					</div>
-				</article>
-				<section class="section_technologies" id="technologies">
-					<h1>technologies</h1>
-					<div class="technologies">
-						<div class="technology">
-							<div class="course">
-								<p>HTML</p>
-								<p>Advanced</p>
-							</div>
-							<div class="th_c">
-								<div class="th_layer_high"></div>
-							</div>
-						</div>
-						<div class="technology">
-							<div class="course">
-								<p>CSS</p>
-								<p>Advanced</p>
-							</div>
-							<div class="th_c">
-								<div class="th_layer_high"></div>
-							</div>
-						</div>
-						<div class="technology">
-							<div class="course">
-								<p>Javascript [ES6]</p>
-								<p>Intermediate</p>
-							</div>
-							<div class="th_c">
-								<div class="th_layer_inter"></div>
-							</div>
-						</div>
-						<div class="technology">
-							<div class="course">
-								<p>Sass, Tailwind, Bootstrap</p>
-								<p>Intermediate</p>
-							</div>
-							<div class="th_c">
-								<div class="th_layer_inter"></div>
-							</div>
-						</div>
-						<div class="technology">
-							<div class="course">
-								<p>React</p>
-								<p>Beginner</p>
-							</div>
-							<div class="th_c">
-								<div class="th_layer_beginner"></div>
-							</div>
-						</div>
-						<div class="technology">
-							<div class="course">
-								<p>TypeScript, JQuery</p>
-								<p>Beginner</p>
-							</div>
-							<div class="th_c">
-								<div class="th_layer_beginner"></div>
-							</div>
-						</div>
-						<div class="technology">
-							<div class="course">
-								<p>Python</p>
-								<p>Beginner</p>
-							</div>
-							<div class="th_c">
-								<div class="th_layer_beginner"></div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="add_tech">
-					<h2>Additional technologies and skills</h2>
-					<ul>
-						<li>Version Control (Git)</li>
-						<li>Quick Learning</li>
-						<li>Teamwork</li>
-						<li><abbr title="Responsive Web Design">RWD</abbr></li>
-						<li>Debugging</li>
-					</ul>
-				</section>
-				<section class="section_Project" id="Project">
-					<h1>projects</h1>
-					<div class="project_section">
-						<div class="projects">
-							<div class="projects_id">
-								<div class="project">
-									<img
-										src="./images/netflix_page.png"
-										alt="netflix_image page" />
-									<div class="overlap">
-										<div class="overlap_content">
-											<a
-												href="https://maarcbaz-netflix.vercel.app/"
-												target="_blank">
-												<i class="fa fa-globe"> Live</i>
-											</a>
-											<a
-												href="https://github.com/Maarcbaz/Netflix.git"
-												target="_blank">
-												<i class="fa fa-code"> Code </i>
-											</a>
-										</div>
-									</div>
-								</div>
-								<p class="description">Netflix webpage</p>
-							</div>
-						</div>
-						<div class="projects">
-							<div class="projects_id">
-								<div class="project">
-									<img
-										src="./images/br-architect.png"
-										alt="netflix_image page" />
-									<div class="overlap">
-										<div class="overlap_content black">
-											<a
-												href="https://maarcbaz-br-architect.vercel.app/"
-												target="_blank">
-												<i class="fa fa-globe"> Live</i>
-											</a>
-											<a
-												href="https://github.com/Maarcbaz/BR-Architect.git"
-												target="_blank">
-												<i class="fa fa-code"> Code </i>
-											</a>
-										</div>
-									</div>
-								</div>
-								<p class="description">Landing page for a construction site</p>
-							</div>
-						</div>
-						<div class="projects">
-							<div class="projects_id">
-								<div class="project">
-									<img src="./images/space_Tourism.png" alt="space_Tourism" />
-									<div class="overlap">
-										<div class="overlap_content">
-											<a
-												href="https://space-tourism-webapp-omega.vercel.app/"
-												target="_blank">
-												<i class="fa fa-globe"> Live</i>
-											</a>
-											<a
-												href="https://github.com/Maarcbaz/Space-tourism.git"
-												target="_blank">
-												<i class="fa fa-code"> Code </i>
-											</a>
-										</div>
-									</div>
-								</div>
-								<p class="description">Space Tourism webApp</p>
-							</div>
-						</div>
-						<div class="projects">
-							<div class="projects_id">
-								<div class="project">
-									<img src="./images/product_page.png" alt="product_page" />
-									<div class="overlap">
-										<div class="overlap_content black">
-											<a
-												href="https://product-page-one-snowy.vercel.app/"
-												target="_blank">
-												<i class="fa fa-globe"> Live</i>
-											</a>
-											<a
-												href="https://github.com/Maarcbaz/Product_page.git"
-												target="_blank">
-												<i class="fa fa-code"> Code </i>
-											</a>
-										</div>
-									</div>
-								</div>
-								<p class="description">A product landing page</p>
-							</div>
-						</div>
-						<div class="projects">
-							<div class="projects_id">
-								<div class="project">
-									<img src="./images/flyo.png" alt="netflix_image page" />
-									<div class="overlap">
-										<div class="overlap_content">
-											<a
-												href="https://maarcbaz-flyo-page.vercel.app/"
-												target="_blank">
-												<i class="fa fa-globe"> Live</i>
-											</a>
-											<a
-												href="https://github.com/Maarcbaz/flyo-landing-page.git"
-												target="_blank">
-												<i class="fa fa-code"> Code </i>
-											</a>
-										</div>
-									</div>
-								</div>
-								<p class="description">Flyo landing Webpage</p>
-							</div>
-						</div>
-						<div class="projects">
-							<div class="projects_id">
-								<div class="project">
-									<img
-										src="./images/loopstudios.png"
-										alt="netflix_image page" />
-									<div class="overlap">
-										<div class="overlap_content">
-											<a
-												href="https://maarcbaz-loopstudios-page.vercel.app/"
-												target="_blank">
-												<i class="fa fa-globe"> Live</i>
-											</a>
-											<a
-												href="https://github.com/Maarcbaz/Loopstudio-page.git"
-												target="_blank">
-												<i class="fa fa-code"> Code </i>
-											</a>
-										</div>
-									</div>
-								</div>
-								<p class="description">Loopstudios Webpage</p>
-							</div>
-						</div>
-						<div class="projects">
-							<div class="projects_id">
-								<div class="project">
-									<img
-										src="./images/easy-bank-landing_page.png"
-										alt="netflix_image page" />
-									<div class="overlap">
-										<div class="overlap_content black">
-											<a
-												href="https://maarcbaz-easybank.vercel.app/"
-												target="_blank">
-												<i class="fa fa-globe"> Live</i>
-											</a>
-											<a
-												href="https://github.com/Maarcbaz/Easybank.git"
-												target="_blank">
-												<i class="fa fa-code"> Code </i>
-											</a>
-										</div>
-									</div>
-								</div>
-								<p class="description">Easybank landing Webpage</p>
-							</div>
-						</div>
-						<div class="projects">
-							<div class="projects_id">
-								<div class="project">
-									<img
-										src="./images/iphone_webapp.png"
-										alt="netflix_image page" />
-									<div class="overlap">
-										<div class="overlap_content">
-											<a
-												href="https://iphone-webapp.vercel.app/"
-												target="_blank">
-												<i class="fa fa-globe"> Live</i>
-											</a>
-											<a
-												href="https://github.com/Maarcbaz/Iphone-webApp.git"
-												target="_blank">
-												<i class="fa fa-code"> Code </i>
-											</a>
-										</div>
-									</div>
-								</div>
-								<p class="description">Iphone Webpage</p>
-							</div>
-						</div>
-						<div class="projects">
-							<div class="projects_id">
-								<div class="project">
-									<img
-										src="./images/interior_desing.png"
-										alt="netflix_image page" />
-									<div class="overlap">
-										<div class="overlap_content">
-											<a
-												href="https://maarcbaz-interior-design.vercel.app/"
-												target="_blank">
-												<i class="fa fa-globe"> Live</i>
-											</a>
-											<a
-												href="https://github.com/Maarcbaz/interior-design.git"
-												target="_blank">
-												<i class="fa fa-code"> Code </i>
-											</a>
-										</div>
-									</div>
-								</div>
-								<p class="description">Landing page for Interior Design</p>
-							</div>
-						</div>
-						<div class="projects">
-							<div class="projects_id">
-								<div class="project">
-									<img src="./images/catering.png" alt="netflix_image page" />
-									<div class="overlap">
-										<div class="overlap_content">
-											<a
-												href="https://maarcbaz-catering-site.vercel.app/"
-												target="_blank">
-												<i class="fa fa-globe"> Live</i>
-											</a>
-											<a
-												href="https://github.com/Maarcbaz/catering-site.git"
-												target="_blank">
-												<i class="fa fa-code"> Code </i>
-											</a>
-										</div>
-									</div>
-								</div>
-								<p class="description">Catering Webpage</p>
-							</div>
-						</div>
-					</div>
-				</section>
-			</main>
-			<footer id="contact">
-				<div class="popup" id="popup_msg">
-					<div class="overlay_pop"></div>
-					<div class="pop_content">
-						<h4>Send Email instead</h4>
-						<div class="popmenu_btn">
-							<button class="btnCancel" onclick="popNav()">Cancel</button>
-							<button class="bntEmail_pop">
-								<a href="mailto:Olayemiabaz@gmail.com">Send Mail </a>
-							</button>
-						</div>
-					</div>
-				</div>
-				<h2 class="ftHead">Contact</h2>
-				<div class="footer">
-					<div class="footer_text">
-						<p>
-							Have a question, a project in mind, or just want to connect? I'm
-							here and ready to chat! Your ideas and feedback are always
-							welcomed. Reach out for inquiries, collaborations, or if you
-							simply want to discuss the exciting possibilities of the digital
-							world.
-						</p>
-						<div class="ftLinks">
-							<ul>
-								<li>
-									<a
-										href="https://github.com/Maarcbaz?tab=repositories"
-										target="_blank">
-										<i class="fa fa-github"></i>
-									</a>
-								</li>
-								<li>
-									<a
-										href="https://www.linkedin.com/in/abass-muhammed-73739829b/"
-										target="_blank">
-										<i class="fa fa-linkedin-square"></i>
-									</a>
-								</li>
-								<li>
-									<a
-										href="https://wa.me/message/ZZIQ6AVH74DBA1"
-										target="_blank">
-										<i class="fa fa-whatsapp"></i>
-									</a>
-								</li>
-								<li>
-									<a href="mailto:olayemiabaz@gmail.com" target="_blank">
-										<i class="fa fa-message"></i>
-									</a>
-								</li>
-								<li>
-									<a
-										href="https://www.instagram.com/stre_etcoder/"
-										target="_blank">
-										<i class="fa fa-instagram"></i>
-									</a>
-								</li>
-								<li>
-									<a
-										href="https://www.youtube.com/channel/UCCDv8OlNbM3Q6rKfegisjkw"
-										target="_blank">
-										<i class="fa fa-youtube-square"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<form onsubmit="return validateForm()">
-						<input
-							type="text"
-							name="name"
-							id="full_name"
-							placeholder="Jane Doe" />
-						<textarea
-							name="message"
-							id="textarea"
-							cols="20"
-							rows="10"
-							placeholder="Message"></textarea>
-						<input type="email name="email" id="_email"
-						placeholder="janeDoe@email.com" />
-						<button id="btnFooter" id="email" type="submit" onclick="popNav()">
-							Submit
-						</button>
-					</form>
-				</div>
-			</footer>
+				</footer>
+			</div>
 		</div>
 	</body>
 </html>
