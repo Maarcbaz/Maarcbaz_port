@@ -166,7 +166,7 @@
  }
 
  .section_about_img {
-     animation: displayImg 2s;
+     animation: displayImg 2.3s;
  }
 
  @keyframes display {
@@ -359,7 +359,7 @@
      border-radius: 83px;
      background-color: var(--TECH-BG);
      overflow: hidden;
-     animation: th_canime 2s;
+     animation: th_canime 5s;
  }
 
  @keyframes th_canime {
@@ -472,15 +472,15 @@
  }
 
  .projects:nth-child(odd) {
-     transform: translateX(-300%);
+     transform: translateX(0);
  }
 
  .projects:nth-of-type(even) {
-     transform: translateX(300%);
+     transform: translateX(0);
  }
 
  .projects.show {
-     transform: translateX(0);
+     transform: translateX(-300%);
  }
 
  .overlap {

@@ -12,7 +12,7 @@ function loadAnime() {
         } else {
             containers.style.display = 'block'
         }
-    }, 4500);
+    }, 2500);
 }
 window.addEventListener("load", function () {
     loadAnime()
@@ -111,11 +111,20 @@ function popNav() {
 let projects = document.querySelectorAll(".projects")
 let section_about_text = document.querySelector(".section_about_text")
 window.addEventListener("scroll", sci = () => {
-    let height = window.innerHeight / 9 * .3
+    let height = window.innerHeight / 5 * 3
+    projects.forEach(project => {
+        const protop = project.getBoundingClientRect().bottom
+        if (height < protop) {
+            project.classList.add("show")
+        }
+        else {
+            project.classList.add("show")
+        }
+    })
     projects.forEach(project => {
         const protop = project.getBoundingClientRect().top
         if (height < protop) {
-            project.classList.add("show")
+            project.classList.remove("show")
         }
         else {
             project.classList.remove("show")
