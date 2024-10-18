@@ -202,7 +202,7 @@ function loadAnime() {
         } else {
             containers.style.display = 'block'
         }
-    }, 0);
+    }, 2200);
 }
 
 window.addEventListener("load", function () {
