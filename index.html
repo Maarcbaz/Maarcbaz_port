@@ -10,7 +10,10 @@
 			src="https://kit.fontawesome.com/1a2d1b260e.js"
 			crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="./styles.css" />
-		<link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+		<link
+			rel="shortcut icon"
+			href="./images/maarc_logo-removebg-preview.png"
+			type="image/x-icon" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -48,7 +51,7 @@
 				<nav>
 					<div class="topnav">
 						<div class="logo">
-							<img src="./images/logo.png" alt="" />
+							<img src="./images/maarc_logo-removebg-preview.png" alt="" />
 						</div>
 						<ul>
 							<li>
@@ -184,7 +187,10 @@
 							</div>
 						</div>
 						<div class="section_about_img">
-							<img src="./images/abass.jpg" title="Abass" alt="Abass image" />
+							<img
+								src="./images/maarcbaz.jpg"
+								title="Abass"
+								alt="Abass image" />
 						</div>
 					</article>
 					<section class="section_technologies" id="technologies">
@@ -268,6 +274,50 @@
 					<section class="section_Project" id="Project">
 						<h1>projects</h1>
 						<div class="project_section">
+							<div class="projects">
+								<div class="projects_id">
+									<div class="project">
+										<img src="./images/sneakers.png" alt="sneakers page" />
+										<div class="overlap">
+											<div class="overlap_content black">
+												<a
+													href="https://sneakers-pi-six.vercel.app/"
+													target="_blank">
+													<i class="fa fa-globe"> Live</i>
+												</a>
+												<a
+													href="https://github.com/Maarcbaz/sneakers.git"
+													target="_blank">
+													<i class="fa fa-code"> Code </i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<p class="description">Sneakers webpage</p>
+								</div>
+							</div>
+							<div class="projects">
+								<div class="projects_id">
+									<div class="project">
+										<img src="./images/TodoApp.png" alt="netflix_image page" />
+										<div class="overlap">
+											<div class="overlap_content">
+												<a
+													href="https://todo-app-ten-rust.vercel.app/"
+													target="_blank">
+													<i class="fa fa-globe"> Live</i>
+												</a>
+												<a
+													href="https://github.com/Maarcbaz/TodoApp.git"
+													target="_blank">
+													<i class="fa fa-code"> Code </i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<p class="description">Todo App</p>
+								</div>
+							</div>
 							<div class="projects">
 								<div class="projects_id">
 									<div class="project">
@@ -412,30 +462,6 @@
 								<div class="projects_id">
 									<div class="project">
 										<img
-											src="./images/easy-bank-landing_page.png"
-											alt="netflix_image page" />
-										<div class="overlap">
-											<div class="overlap_content black">
-												<a
-													href="https://maarcbaz-easybank.vercel.app/"
-													target="_blank">
-													<i class="fa fa-globe"> Live</i>
-												</a>
-												<a
-													href="https://github.com/Maarcbaz/Easybank.git"
-													target="_blank">
-													<i class="fa fa-code"> Code </i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<p class="description">Easybank landing Webpage</p>
-								</div>
-							</div>
-							<div class="projects">
-								<div class="projects_id">
-									<div class="project">
-										<img
 											src="./images/iphone_webapp.png"
 											alt="netflix_image page" />
 										<div class="overlap">
@@ -480,28 +506,6 @@
 									<p class="description">Landing page for Interior Design</p>
 								</div>
 							</div>
-							<div class="projects">
-								<div class="projects_id">
-									<div class="project">
-										<img src="./images/catering.png" alt="netflix_image page" />
-										<div class="overlap">
-											<div class="overlap_content">
-												<a
-													href="https://maarcbaz-catering-site.vercel.app/"
-													target="_blank">
-													<i class="fa fa-globe"> Live</i>
-												</a>
-												<a
-													href="https://github.com/Maarcbaz/catering-site.git"
-													target="_blank">
-													<i class="fa fa-code"> Code </i>
-												</a>
-											</div>
-										</div>
-									</div>
-									<p class="description">Catering Webpage</p>
-								</div>
-							</div>
 						</div>
 					</section>
 				</main>
@@ -509,12 +513,18 @@
 					<div class="popup" id="popup_msg">
 						<div class="overlay_pop"></div>
 						<div class="pop_content">
-							<h4>Send Email instead</h4>
 							<div class="popmenu_btn">
-								<button class="btnCancel" onclick="popNav()">Cancel</button>
-								<button class="bntEmail_pop">
-									<a href="mailto:Olayemiabaz@gmail.com">Send Mail </a>
-								</button>
+								<div class="sending">
+									<h5>Sending...</h5>
+									<div class="spinner"></div>
+								</div>
+								<div class="sent">
+									<h5>
+										Sent!
+										<h5>Successfully</h5>
+									</h5>
+									<i class="fa-solid fa-circle-check"></i>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -573,25 +583,27 @@
 								</ul>
 							</div>
 						</div>
-						<form onsubmit="return validateForm()">
+						<form id="form">
 							<input
 								type="text"
-								name="name"
-								id="full_name"
+								required
+								id="from_name"
+								name="from_name"
 								placeholder="Jane Doe" />
 							<textarea
 								name="message"
 								id="textarea"
 								cols="20"
 								rows="10"
-								placeholder="Message"></textarea>
-							<input type="email name="email" id="_email"
-							placeholder="janeDoe@email.com" />
-							<button
-								id="btnFooter"
+								placeholder="Message"
+								required></textarea>
+							<input
+								required
+								type="email"
 								id="email"
-								type="submit"
-								onclick="popNav()">
+								name="email_id"
+								placeholder="janeDoe@email.com" />
+							<button id="btnFooter" id="btn" type="submit" onclick="popNav()">
 								Submit
 							</button>
 						</form>
@@ -599,5 +611,8 @@
 				</footer>
 			</div>
 		</div>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 	</body>
 </html>
