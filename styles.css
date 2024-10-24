@@ -14,9 +14,11 @@
      --WHITE-CLR: rgb(255, 255, 255);
      --LIGHT-WHITE-CLR: rgba(97, 92, 92, 0.331);
      --LIGHT-FILTER: rgba(152, 154, 152, 0.3);
-     --LIGHT-TECH-FILTER: rgba(152, 154, 152, 0.553);
-     --ABOUT-TEXT-CLR: hsl(0, 1%, 51%);
+     --LIGHT-TECH-FILTER: rgba(217, 220, 217, 0.902);
+     --ABOUT-TEXT-CLR: rgb(231, 220, 220);
      --TECH-BG: hsl(220, 57%, 20%);
+     --BTN-COLOR-HOVER: rgb(242, 233, 233);
+     --BTN-COLOR: rgba(203, 202, 201, 0.774);
      --FOOTER-BACKGROUND-COLOR: hsl(218, 69%, 6%);
      --LINEAR-GRD: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
      /* FONT WEIGHT  */
@@ -300,7 +302,7 @@
  }
 
  .empahSize {
-     color: rgb(214, 212, 212);
+     text-decoration: underline;
  }
 
  .about img {
@@ -622,7 +624,7 @@
  .ftHead {
      color: var(--WHITE-CLR);
      font-size: 3rem;
-     padding-left: 12px;
+     padding-left: 28px;
      padding-top: 2rem;
  }
 
@@ -707,14 +709,14 @@
      padding: 8px 10px;
      background-color: transparent;
      border: none;
-     color: var(--LIGHT-FILTER);
      outline: none;
      transition: .3s all linear;
      border-bottom: 1px solid var(--LIGHT-FILTER);
+     color: var(--BTN-COLOR);
  }
 
  #btnFooter:hover {
-     color: var(--LIGHT-FILTER);
+     color: var(--BTN-COLOR-HOVER);
      background-color: var(--LIGHT-WHITE-CLR);
  }
 

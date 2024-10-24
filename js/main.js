@@ -306,7 +306,7 @@ document.getElementById('form').addEventListener('submit', function (evt) {
             Sent()
             load()
         }, (err) => {
-            alert(JSON.stringify(err));
+            alert(JSON.stringify(`${err}: An error occured 404`));
             popup_msg.classList.remove('activePop');
         });
     }
