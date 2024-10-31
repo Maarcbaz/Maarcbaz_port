@@ -305,6 +305,7 @@ document.getElementById('form').addEventListener('submit', function (evt) {
         emailjs.sendForm(serviceID, templateID, this).then(() => {
             Sent()
             load()
+            clr()
         }, (err) => {
             alert(JSON.stringify(`${err}: An error occured 404`));
             popup_msg.classList.remove('activePop');
@@ -327,3 +328,10 @@ function load() {
 }
 
 
+function clr() {
+    setTimeout(() => {
+        form_name.value = ''
+        message.value = ''
+        form_email.value = ''
+    }, 1505);
+}
