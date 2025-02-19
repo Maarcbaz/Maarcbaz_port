@@ -10,6 +10,7 @@ I am passionate and dedicated with Frontend, with a strong background in Web dev
 - **Skills:** HTML, CSS, Javascript.
 - **Link:** [https://maarcbaz-netflix.vercel.app/]
 
+
 ### Project 2: [Project Name 2]
 - **Description:** A webwsite to showcase construction site.
 - **Skills:** HTML, CSS, Javascrpt.
